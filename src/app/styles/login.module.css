@@ -1,0 +1,146 @@
+.class1 {
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    row-gap: 100px;
+}
+
+.title_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome_txt {
+    font-size: 33px;
+    color: #1B1833;
+    font-weight: bold;
+}
+
+.website_description {
+    display: flex;
+    column-gap: 20px;
+}
+
+.website_description h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.class2 {
+    width: 100%;
+    padding: 10px;
+    min-height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 40px;
+    padding: 0px 40px;
+}
+
+.form_parent {
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 20px;
+    display: grid;
+    row-gap: 25px;
+    justify-items: center;
+    flex: 2;
+    min-height: 321px;
+    box-shadow: 1px 1px 10px 1px #3A465B;
+}
+
+.form_parent>h4 {
+    color: #004d40;
+    font-size: 1.7rem;
+}
+
+/* 2A2A2A */
+.form_align {
+    display: grid;
+    row-gap: 20px;
+    width: 80%;
+}
+
+.form_align>input {
+    /* height: 2rem;
+    padding: 0 10px;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #000000;
+    border-radius: 2px;
+    color: #441752;
+    font-weight: bold;
+    font-size: 17px; */
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid #1B1833;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    font-weight: bold;
+    color: #1B1833;
+}
+
+.form_align>input::placeholder {
+    color: #1B1833;
+}
+
+.button {
+    width: 40%;
+    margin-left: 35%;
+    height: 40px;
+    color: #F29F58;
+    background: #1B1833;
+    font-size: 16px;
+    font-weight: bold;
+    border: .5px solid;
+}
+
+.button:hover {
+    width: 100%;
+    margin: 0px;
+    cursor: pointer;
+    order: 3px solid;
+    box-shadow: 6px 7px 7px -1px;
+    background: #00796b;
+}
+
+.or_btn {
+    padding: 20px;
+    border-radius: 50px;
+    background: #FFFFFF;
+    color: #000000;
+}
+
+@media(max-width: 900px) {
+    .class1 {
+        padding-top: 20px;
+    }
+
+    .class2 {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .class2 div {
+        width: 80%  ;
+    }
+}
+
+@media(max-width: 500px) {
+    .class1 {
+        row-gap: 40px;
+    }
+    .welcome_txt, .website_description h3 {
+        font-size: 16px;
+    }
+
+    .form_align input  {
+        width: 80%;
+    }
+}

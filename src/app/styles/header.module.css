@@ -1,0 +1,30 @@
+.main_box {
+    min-height: 120px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+.contact_us {
+    color: #F29F58;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header_image {
+    width: 140px;
+    height: 100px;
+}
+
+@media(max-width: 740px) {
+    .main_box {
+        min-height: 100px;
+        max-height: 100px;
+    }
+    .header_image {
+        width: 80px;
+        height: 80px;
+    }
+}

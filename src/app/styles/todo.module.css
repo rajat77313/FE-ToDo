@@ -1,0 +1,214 @@
+.main_div {
+    opacity: 1;
+    margin: 2% 10%;
+    min-height: 300px;
+}
+
+.upper_div {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.welcome_txt {
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+}
+
+.welcome_span {
+    opacity: 1;
+}
+
+.middle_block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    column-gap: 65px;
+}
+
+/* Search and Date Filter Styles */
+.date_filter_parent {
+    display: flex;
+    column-gap: 20px;
+    align-items: flex-end;
+}
+
+.date_filter_label {
+    opacity: 1;
+}
+
+.date_filter_field {
+    min-width: 171px;
+}
+
+/* New Todo Section */
+.newTodo {
+    min-height: 40px;
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+}
+
+.newTodo input, .edit_div input, .middle_block input {
+    border: none;
+    background: transparent;
+    border-bottom: 3px solid #1B1833;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    font-weight: bold;
+    color: #1B1833;
+}
+
+.newTodo input::placeholder, .edit_div input::placeholder, .middle_block input::placeholder {
+    color: #1B1833;
+}
+
+.button_add_todo {
+    min-width: 100px;
+    border-radius: 10px;
+    border: none;
+    background: #AB4459;
+    color: #1B1833;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Todo List Section */
+.todoBlock {
+    display: grid;
+    row-gap: 5px;
+}
+
+.todoItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border: 4px solid #AB4459;
+    box-shadow: 1px 1px 8px 0px;
+    row-gap: 10px;
+    border-radius: 10px;
+}
+
+.edit_div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit_icons {
+    display: flex;
+    column-gap: 20px;
+}
+
+.todoText {
+    color: #1B1833;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.todoText_inactive {
+    color: #1B1833;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #fff;
+}
+
+.form_container {
+    display: flex;
+    column-gap: 20px;
+}
+
+/* Icons */
+.icons_design {
+    cursor: pointer;
+    color: #1B1833 !important;
+    transition: transform 0.3s ease;
+}
+
+.icons_design:hover {
+    transform: scale(2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main_div {
+        margin: 2% 5%;
+    }
+
+    .upper_div {
+        flex-direction: column;
+    }
+
+    .welcome_txt {
+        font-size: 16px;
+    }
+
+    .middle_block {
+        flex-direction: column;
+        column-gap: 30px;
+    }
+
+    .newTodo input {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .todoItem {
+        flex-direction: column;
+        padding: 10px;
+        border: 3px solid #AB4459;
+    }
+
+    .todoText {
+        font-size: 1rem;
+    }
+
+    .icons_design {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main_div {
+        margin: 2% 3%;
+    }
+
+    .welcome_txt {
+        font-size: 18px;
+    }
+
+    .date_filter_parent {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .middle_block {
+        flex-direction: column;
+        padding: 5px 15px;
+    }
+
+    .date_filter_field {
+        min-width: 100%;
+    }
+
+    .todoItem {
+        padding: 8px 15px;
+        border: 2px solid #AB4459;
+    }
+}
