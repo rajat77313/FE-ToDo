@@ -1,7 +1,5 @@
 import styles from "@/app/styles/login.module.css";
-import { redirect } from "next/navigation";
 import { Space_Grotesk } from "next/font/google";
-import {url_prefix} from "../utils/constants"
 const font = Space_Grotesk({ subsets: ["latin"], weight: "400" });
 import Form from "../component/form"
 
@@ -28,7 +26,7 @@ const Login = () => {
 
 
         <div className={styles.class2}>
-      <Form/>
+          <Form />
         </div>
       </div>
     </>

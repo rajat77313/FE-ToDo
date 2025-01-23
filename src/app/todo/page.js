@@ -19,6 +19,7 @@ const ToDo = () => {
   const [user, userData] = useState([]);
 
   useEffect(() => {
+    router.push('/validateuser')
     const u_d = localStorage.getItem("user_data");
     if (!u_d) {
       router.push("/login");
