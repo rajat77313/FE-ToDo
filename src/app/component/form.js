@@ -13,7 +13,7 @@ const override = {
 
 const Form = () => {
   const router = useRouter();
-  localStorage.clear();
+  // localStorage.clear();
   const [showLoader, showLoaderFn] = useState(false);
   const [formName, setForm] = useState("login");
   const [msg_alert, msgFn] = useState({
