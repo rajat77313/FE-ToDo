@@ -33,7 +33,7 @@ const ToDo = () => {
     if (!val.length) {
       return setItems(all_items);
     }
-    const arr = items.filter((i) => i.text.includes(val));
+    const arr = items.filter((i) => i.text.toLowerCase().includes(val.toLowerCase()));
     setItems(arr);
   };
 

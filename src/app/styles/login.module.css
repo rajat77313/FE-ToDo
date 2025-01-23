@@ -41,6 +41,34 @@
     padding: 0px 40px;
 }
 
+.loader {
+    display: inline-block;
+    padding: 20px 50px;
+    position: absolute;
+    top: 300px;
+    border-radius: 10px;    
+}
+
+.user_msg_block_fail {
+    display: inline-block;
+    padding: 20px 50px;
+    background: red;
+    color: black;
+    position: absolute;
+    top: 20px;
+    border-radius: 10px;
+}
+
+.user_msg_block_pass {
+    display: inline-block;
+    padding: 20px 50px;
+    background: springgreen;
+    color: black;
+    position: absolute;
+    top: 20px;
+    border-radius: 10px;
+}
+
 .form_parent {
     border: 2px solid #000000;
     border-radius: 8px;
@@ -66,16 +94,6 @@
 }
 
 .form_align>input {
-    /* height: 2rem;
-    padding: 0 10px;
-    outline: none;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #000000;
-    border-radius: 2px;
-    color: #441752;
-    font-weight: bold;
-    font-size: 17px; */
     border: none;
     background: transparent;
     border-bottom: 3px solid #1B1833;
@@ -110,25 +128,18 @@
     background: #00796b;
 }
 
-.or_btn {
-    padding: 20px;
-    border-radius: 50px;
-    background: #FFFFFF;
-    color: #000000;
+.button:disabled {
+    cursor: not-allowed;
 }
+
+.sign_up_prompt {
+color: #1B1833;
+}
+
 
 @media(max-width: 900px) {
     .class1 {
         padding-top: 20px;
-    }
-
-    .class2 {
-        flex-direction: column;
-        row-gap: 20px;
-    }
-
-    .class2 div {
-        width: 80%  ;
     }
 }
 
